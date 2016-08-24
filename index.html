@@ -1,119 +1,57 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Podcast Arcade</title>
-        <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+        <title>The Podcast Arcade</title>
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
         <style>
-           
-           body {
+            body{
                 margin: 0;
-                background-color: black;
-                background-image: url("images1.jpg");
+                background: url("images/background.jpg") no-repeat;
+                background-size: cover;
+                background-color: #161616;
+             }
+            p{
+                font-family: 'Nunito', sans-serif;
+                color: white;
             }
-            .wrapper{
-                display: flex;
-                flex-flow: row nowrap;
+            #intro{
+                display: block;
+                width: 60vw;
+                font-size: 4vh;
+                font-style: italic;
+                margin:auto;
+                padding: 5vh 0 3vh 0;
             }
-            #lightl{
-                background-color: lightgray;
-            
-                flex-grow: 1;
-                order:1;
-                align-content: center;
-            }
-             #imglt{
-                float:left;
-            }
-            .header {
-               background-color: lightgray;
-            
-                font-family: 'Anton', sans-serif;
-                color:red;
-                font-size: 70px;
+            #title{
+                display: block;
+                width: 400px;
+                margin: 0 auto;
                 text-align: center;
-                text-shadow: 0 1px 0 #ccc,
-               0 2px 0 #c9c9c9,
-               0 3px 0 #bbb,
-               0 4px 0 #b9b9b9,
-               0 5px 0 #aaa,
-               0 6px 1px rgba(0,0,0,.1),
-               0 0 5px rgba(0,0,0,.1),
-               0 1px 3px rgba(0,0,0,.3),
-               0 3px 5px rgba(0,0,0,.2),
-               0 5px 10px rgba(0,0,0,.25),
-               0 10px 10px rgba(0,0,0,.2),
-               0 20px 20px rgba(0,0,0,.15);
-               flex-grow: 3;
-                order: 2;
+                padding: 15vh 0 5vh 0;
             }
-               
-          #lightr{
-                background-color: lightgray;
-                flex-grow: 1;
-                order: 3;
-            }
-           #imgrt{
-                float: right;
-            }
-            .arcadeline{
+            #arcadeLine{
                 display: flex;
-                flex-flow: row nowrap;
-                height: 500px;
+                vertical-align: center;
+                justify-content: center;
             }
-            #thunder{flex-grow: 1;
-                border: 1px solid blue;
-                width: 170px;
-                height: 320px;
-                margin: auto;
-                
+            .machine{
+                display: inline-block;
             }
-             #img_thunder{
-                border: 1px solid red;
-                
-                
-                
+            #copyright{
+                padding: 5px 5px 20px 50px;
             }
-            #geekvice{flex-grow: 1;
-                border: 1px solid blue;
-                width: 170px;
-                height: 320px;
-                margin: auto;
-                
-            }
-            #ddim{flex-grow: 1;
-                border: 1px solid blue;
-                width: 170px;
-                height: 320px;
-                margin: auto;
-            }
-            #underinc{flex-grow: 1;
-                border: 1px solid blue;
-                width: 170px;
-                height: 320px;
-                margin: auto;
-            }
-           
         </style>
     </head>
     <body>
-        <div class="wrapper">
-        <div id="lightl"><img id="imglt" width="140px" height="100px" src="ceilinglight.jpg"></div>
-        <div id="lightr"><img id="imgrt" width="140px" height="100px" src="ceilinglight.jpg"></div>
-        <header class="header">PODCAST ARCADE</header>
-        </div> 
-        
-        <div class="arcadeline">
-            <div id="thunder"><img id="img_thunder" src="http://placehold.it/170x320"></div>
-            <div id="geekvice"><img id="img.geekvice" src="http://placehold.it/170x320"></div>
-            <div id="ddim"><img id="img.ddim" src="http://placehold.it/170x320"></div>
-            <div id="underinc"><img id="img.underinc" src="http://placehold.it/170x320"></div>
-            
+        <p id="intro">Behind a secret door in the back of an old video arcade, you find a line of machines that still seem to be functioning! Time for an adventure . . .</p>
+        <div id="title"><img src="images/podcastarcade400.png" /></div>
+        <div id="arcadeLine">
+            <div id="thunder" class="machine"><a href="http://www.falconpunchthunderdads.com"><img src="images/falconpunchcrop.png"></a></div>
+            <div id="ddim" class="machine"><a href="http://www.daydreaminstructionmanual.com"><img src="images/daydreamcrop.png"></a></div>
+            <div id="goadkick" class="machine"><a href="http://www.goadkicker.libsyn.com"><img src="images/goadkicker.png"></a></div>
+            <div id="underinc" class="machine"><a href="http://www.undergroundinc.info"><img src="images/undergroundcrop.png"></a></div>
+            <div id="geekvice" class="machine"><a href="http://www.geekvice.libsyn.com"><img src="images/geekvicecrop.png"></a></div>
         </div>
-
-        
-        </div>
-        
-        
-        
-    </body>   
+        <p id="copyright">Copyright &copy; 2016 The Podcast Arcade All rights reserved.</p>   
+    </body>
 </html>

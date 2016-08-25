@@ -37,14 +37,44 @@
             .machine{
                 display: inline-block;
             }
+            #floor{
+                background-color:chartreuse;
+                right: 0;
+                bottom: 0;
+                height: 80vh;
+                width: 100vw;
+                
+            }
             #copyright{
                 padding: 5px 5px 20px 50px;
             }
+           /* Media Query #1 
+            @media all and (min-width: 950px) and (max-width: 1150px) {
+                #logo{
+				        position: relative;
+						height: 7vh;
+				        left: 7vw;
+				        top: 2.75vh;
+				    }
+               #menu{
+				        position: relative;
+				   		right: 7vw;
+				        height: 12.5vh;				
+				    } 
+            }*/
+            /* Media Query #2 
+            @media all and (max-width: 950px){
+                  #logo{
+				      	position: relative;  
+					  	height: 7vh;
+				        left: 10vw;
+				        top: 2.75vh;
+                }*/ 
         </style>
     </head>
     <body>
         <p id="intro">Behind a secret door in the back of an old video arcade, you find a line of machines that still seem to be functioning! Time for an adventure . . .</p>
-        <div id="title"><img src="images/podcastarcade400.png" /></div>
+        <img id="title" src="images/podcastarcade400.png" />
         <div id="arcadeLine">
             <div id="thunder" class="machine"><a href="http://www.falconpunchthunderdads.com"><img src="images/falconpunchcrop.png"></a></div>
             <div id="ddim" class="machine"><a href="http://www.daydreaminstructionmanual.com"><img src="images/daydreamcrop.png"></a></div>
@@ -52,6 +82,7 @@
             <div id="underinc" class="machine"><a href="http://www.undergroundinc.info"><img src="images/undergroundcrop.png"></a></div>
             <div id="geekvice" class="machine"><a href="http://www.geekvice.libsyn.com"><img src="images/geekvicecrop.png"></a></div>
         </div>
+        <div id="floor"> dfdfdf</div>
         <p id="copyright">Copyright &copy; 2016 The Podcast Arcade All rights reserved.</p>   
     </body>
 </html>

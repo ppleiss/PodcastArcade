@@ -3,6 +3,8 @@
     <head>
         <title>The Podcast Arcade</title>
         <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
         <style>
             body{
                 margin: 0;
@@ -24,7 +26,7 @@
             }
             #title{
                 display: block;
-                width: 400px;
+                width: 20vw;
                 margin: 0 auto;
                 text-align: center;
                 padding: 15vh 0 5vh 0;
@@ -34,17 +36,13 @@
                 vertical-align: center;
                 justify-content: center;
             }
+            
             .machine{
                 display: inline-block;
+                width: 10vw;
+                flex-grow: 1;
             }
-            #floor{
-                background-color:chartreuse;
-                right: 0;
-                bottom: 0;
-                height: 80vh;
-                width: 100vw;
-                
-            }
+            
             #copyright{
                 padding: 5px 5px 20px 50px;
             }
@@ -76,13 +74,13 @@
         <p id="intro">Behind a secret door in the back of an old video arcade, you find a line of machines that still seem to be functioning! Time for an adventure . . .</p>
         <img id="title" src="images/podcastarcade400.png" />
         <div id="arcadeLine">
-            <div id="thunder" class="machine"><a href="http://www.falconpunchthunderdads.com"><img src="images/falconpunchcrop.png"></a></div>
-            <div id="ddim" class="machine"><a href="http://www.daydreaminstructionmanual.com"><img src="images/daydreamcrop.png"></a></div>
-            <div id="goadkick" class="machine"><a href="http://www.goadkicker.libsyn.com"><img src="images/goadkicker.png"></a></div>
-            <div id="underinc" class="machine"><a href="http://www.undergroundinc.info"><img src="images/undergroundcrop.png"></a></div>
-            <div id="geekvice" class="machine"><a href="http://www.geekvice.libsyn.com"><img src="images/geekvicecrop.png"></a></div>
+            <div class="machine"><a href="http://www.falconpunchthunderdads.com"><img src="images/falconpunchcrop.png"></a></div>
+            <div class="machine"><a href="http://www.daydreaminstructionmanual.com"><img src="images/daydreamcrop.png"></a></div>
+            <div class="machine"><a href="http://www.goadkicker.libsyn.com"><img src="images/goadkicker.png"></a></div>
+            <div class="machine"><a href="http://www.undergroundinc.info"><img src="images/undergroundcrop.png"></a></div>
+            <div class="machine"><a href="http://www.geekvice.libsyn.com"><img src="images/geekvicecrop.png"></a></div>
         </div>
-        <div id="floor"> dfdfdf</div>
+        
         <p id="copyright">Copyright &copy; 2016 The Podcast Arcade All rights reserved.</p>   
     </body>
 </html>
